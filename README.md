@@ -28,3 +28,21 @@ Dette er altså en observasjon med følgende egenskaper: sepal_length_cm = 5.5, 
 - Bruk modellen til å gjøre prediksjon på observasjonen over (.predict())
 
 Bonus oppgave: Kan du gjøre et sannsynlighetsestimat på den trente modellen? Hvor sikker er den på at den har gitt deg rett klassifisering?
+
+## Oppgave 3 - Tensorflow og Teachable machine - Tren og bruk en modell
+Vi kan bruke Google sin Teachable Machine [https://teachablemachine.withgoogle.com/train/image](https://teachablemachine.withgoogle.com/train/image) til å trene en TensorFlow modell som gjenkjenner objekter. Prøv å bruke denne til å lage en enkel modell som kan brukes for å gjenkjenne objekter i et pythonprogram.
+
+- Sett opp et kjøremiljø lokalt på maskinen (virtual environment eller conda environment).
+- Aktiver og installer nødvendige biblioteker i dette kjøremiljøet.
+- Skriv kode som kan laste inn og bruke resultatet som du laget i Teachable Machine.
+
+*Grunnet en feil / utdatert eksport fra Teachable machine må en sette opp pythonmiljøet med en eldre versjon av python og TensorFlow.*
+
+    % conda create -n tensorflow python=3.11
+    % conda activate tensorflow
+    % pip install tensorflow==2.13
+    % pip install opencv-python
+
+*Med miljøet beskrevet over vil det være mulig å laste inn TensorFlow -> Keras (h5) som er anbefalt eksportformat fra Teachable Machine.*
+
+Hvordan bruke Teachable Machine for å trene en KI modell med egne bilder: [https://youtu.be/ie9d9VUnKAc](https://youtu.be/ie9d9VUnKAc)
